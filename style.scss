@@ -1,0 +1,35 @@
+$highlight: #7DAF3B !default;
+
+.cookie-notice {
+  background: #333;
+  bottom: 0;
+  color: #fff;
+  font-size: .875em;
+  left: 0;
+  padding: .5em 5%;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 99999;
+
+  a,
+  a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .cookie-notice__accept {
+    background: $highlight;
+    border-radius: .1875em;
+    display: inline-block;
+    font-size: .7em;
+    font-weight: 700;
+    padding: .5em .75em;
+    text-decoration: none;
+
+    @include media(mobile) {
+      display: block;
+      margin: 1em 0;
+    }
+  }
+}
