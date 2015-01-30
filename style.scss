@@ -1,4 +1,17 @@
+@function brightness($color) {
+  @return ((red($color) * .299) + (green($color) * .587) + (blue($color) * .114)) / 255 * 100%;
+}
+
+@function contrast($color, $dark: #000, $light: #fff) {
+  $color-brightness: brightness($color);
+  $light-text-brightness: brightness($light);
+  $dark-text-brightness: brightness($dark);
+
+  @return if(abs($color-brightness - $light-text-brightness) > abs($color-brightness - $dark-text-brightness), $light, $dark);
+}
+
 $highlight: #7DAF3B !default;
+
 
 .cookie-notice {
   background: #333;
@@ -6,30 +19,22 @@ $highlight: #7DAF3B !default;
   color: #fff;
   font-size: .875em;
   left: 0;
+  line-height: 1.5;
   padding: .5em 5%;
   position: fixed;
   text-align: center;
   width: 100%;
   z-index: 99999;
 
-  a,
-  a:hover {
-    color: #000;
-    text-decoration: underline;
-  }
-
-  .cookie-notice__accept {
+  .cookie-notice__accept,
+  .cookie-notice__accept:hover {
     background: $highlight;
     border-radius: .1875em;
-    display: inline-block;
+    color: contrast( $highlight );
+    cursor: pointer;
     font-size: .7em;
     font-weight: 700;
     padding: .5em .75em;
     text-decoration: none;
-
-    @include media(mobile) {
-      display: block;
-      margin: 1em 0;
-    }
   }
 }
