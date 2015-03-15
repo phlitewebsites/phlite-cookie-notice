@@ -1,4 +1,4 @@
-![](https://david-dm.org/pythonic1/cookie-notice/dev-status.svg)
+![](https://david-dm.org/pythonic1/cookie-notice.svg)
 
 # cookie-notice
 
