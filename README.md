@@ -1,5 +1,5 @@
-![](https://david-dm.org/pythonic1/cookie-notice.svg)
-![](https://david-dm.org/pythonic1/cookie-notice/dev-status.svg)
+![](https://david-dm.org/danhayden/cookie-notice.svg)
+![](https://david-dm.org/danhayden/cookie-notice/dev-status.svg)
 
 # cookie-notice
 
