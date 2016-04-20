@@ -1,5 +1,5 @@
 {
-  "name": "cookie-notice",
+  "name": "phlite-cookie-notice",
   "version": "1.0.0",
   "description": "minimal cookie notice utilising localStorge for persistence",
   "main": "index.js",
