@@ -1,5 +1,4 @@
-![](https://david-dm.org/danhayden/cookie-notice.svg)
-![](https://david-dm.org/danhayden/cookie-notice/dev-status.svg)
+![](https://david-dm.org/phlitewebsites/phlite-cookie-notice.svg)
 
 # cookie-notice
 
